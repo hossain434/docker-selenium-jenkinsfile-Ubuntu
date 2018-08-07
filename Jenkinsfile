@@ -13,7 +13,7 @@ pipeline {
         stage('Build Image') {
             steps {
                 script {
-                	app = sudo docker.build("vinsdocker/containertest")
+                	app = docker.build("vinsdocker/containertest")
                 }
             }
         }
